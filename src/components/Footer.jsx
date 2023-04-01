@@ -1,5 +1,9 @@
 import { Fragment } from "react";
 import SavePlyLogo from "../assets/Images/SavePly_logo.svg";
+import Twitter from "../assets/Images/Twitter.svg";
+import Facebook from "../assets/Images/Facebook.svg";
+import Instagram from "../assets/Images/Instagram.svg";
+import LinkedIn from "../assets/Images/LinkedIn.svg";
 
 const Footer = () => {
   return (
@@ -33,7 +37,26 @@ const Footer = () => {
             </li>
           </ul>
           <p className="text-[#7F0799]">Follow us:</p>
-          <div className=""></div>
+          <div className="flex justify-between space-x-5 my-4 w-[200px]">
+            <a
+              href="https://twitter.com/saveplyafrica?t=bATMrkhX3MIKUOkfYfYNTg&s=09"
+              target="_blank"
+            >
+              <img src={Twitter} alt="" />
+            </a>
+            <a href="https://www.linkedin.com/company/saveply" target="_blank">
+              <img src={LinkedIn} alt="" />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100089687713444&mibextid=ZbWKwL"
+              target="_blank"
+            >
+              <img src={Facebook} alt="" />
+            </a>
+            <a href="https://www.instagram.com/saveply.ng" target="_blank">
+              <img src={Instagram} alt="" />
+            </a>
+          </div>
         </div>
       </div>
     </Fragment>
