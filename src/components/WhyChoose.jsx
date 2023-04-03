@@ -21,10 +21,10 @@ const WhyChoose = () => {
           </p>
         </div>
 
-        <div className="relative flex overflow-hidden">
+        <div className="relative flex overflow-hidden space-x-2">
           <div
             className={`min-w-full rounded-xl my-12 p-8 md:p-12 flex items-center text-center sm:text-start flex-col-reverse sm:flex-row justify-between duration-500 bg-[#7F0799] ${
-              currrentIndex > 0 ? "translate-x-[-100%]" : "translate-x-0"
+              currrentIndex > 0 ? "translate-x-[-101%]" : "translate-x-0"
             }`}
           >
             <div className="w-[100%] sm:w-[60%] md:w-[60%] lg:w-[45%] xl:w-[55%]">
@@ -42,8 +42,11 @@ const WhyChoose = () => {
 
           <div
             className={`min-w-full rounded-xl my-12 p-8 md:p-12 flex items-center text-center sm:text-start flex-col-reverse sm:flex-row justify-between duration-500 bg-[#FEC81F] ${
-              currrentIndex === 1 && "translate-x-[-100%]"
-            } ${currrentIndex > 1 && "translate-x-[-200%]"}`}
+              currrentIndex === 1 &&
+              "translate-x-[-101.7%] sm:translate-x-[-101%] xl:translate-x-[-100.5%]"
+            } ${
+              currrentIndex > 1 && "translate-x-[-203%] xl:translate-x-[-201%]"
+            }`}
           >
             <div className="w-[100%] sm:w-[60%] md:w-[60%] lg:w-[45%] xl:w-[55%]">
               <h1 className="text-lg sm:text-4xl lg:text-5xl xl:text-6xl font-semibold text-[#41473D]">
@@ -64,8 +67,12 @@ const WhyChoose = () => {
           </div>
 
           <div
-            className={`min-w-full rounded-xl my-12 p-8 md:p-12 flex items-center text-center sm:text-start flex-col-reverse sm:flex-row justify-between duration-300 bg-[#070807] ${
-              currrentIndex === 2 && "translate-x-[-200%]"
+            className={`min-w-full rounded-xl my-12 p-8 md:p-12 flex items-center text-center sm:text-start flex-col-reverse sm:flex-row justify-between duration-500 bg-[#070807] ${
+              currrentIndex === 1 &&
+              "translate-x-[-101.7%] sm:translate-x-[-101%] xl:translate-x-[-100.5%]"
+            } ${
+              currrentIndex === 2 &&
+              "translate-x-[-204%] sm:translate-x-[-202%] xl:translate-x-[-201.1%]"
             }`}
           >
             <div className="w-[100%] sm:w-[60%] md:w-[60%] lg:w-[45%] xl:w-[55%]">

@@ -8,9 +8,9 @@ import LinkedIn from "../assets/Images/LinkedIn.svg";
 const Footer = () => {
   return (
     <Fragment>
-      <div className="flex flex-col md:flex-row justify-between md:items-center w-[90%] mx-auto font-semibold">
+      <div className="flex flex-col lg:flex-row justify-between lg:items-center w-[90%] mx-auto font-semibold">
         <img src={SavePlyLogo} alt="" className="md:w-[200px] w-[100px]" />
-        <div className="max-w-[400px]">
+        <div className="max-w-[400px] my-12 lg:my-0">
           <ul className="flex justify-between md:items-center mb-4 text-[#7F0799]">
             <li>Home</li>
             <li>Why Us</li>
@@ -29,15 +29,17 @@ const Footer = () => {
           <ul className="my-2">
             <li>
               {" "}
-              <a href="mailto:saveply@gmail.com">saveply@gmail.com</a>
+              <a href="mailto:saveplyafrica@gmail.com">
+                saveplyafrica@gmail.com
+              </a>
             </li>
-            <li>
+            <li className="mt-2">
               {" "}
-              <a href="tel:+234 3533643623">+234 3533643623</a>
+              <a href="tel:+2348166931080">+2348166931080</a>
             </li>
           </ul>
           <p className="text-[#7F0799]">Follow us:</p>
-          <div className="flex justify-between space-x-5 my-4 w-[200px]">
+          <div className="flex justify-between space-x-7 my-4 w-[200px]">
             <a
               href="https://twitter.com/saveplyafrica?t=bATMrkhX3MIKUOkfYfYNTg&s=09"
               target="_blank"
