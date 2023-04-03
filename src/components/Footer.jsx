@@ -8,7 +8,7 @@ import LinkedIn from "../assets/Images/LinkedIn.svg";
 const Footer = () => {
   return (
     <Fragment>
-      <div className="flex flex-col lg:flex-row justify-between lg:items-center w-[90%] mx-auto font-semibold">
+      <div className="flex flex-col lg:flex-row justify-between lg:items-center w-[90%] mx-auto font-semibold py-8">
         <img src={SavePlyLogo} alt="" className="md:w-[200px] w-[100px]" />
         <div className="max-w-[400px] my-12 lg:my-0">
           <ul className="flex justify-between md:items-center mb-4 text-[#7F0799]">
