@@ -23,7 +23,7 @@ const WhyChoose = () => {
 
         <div className="relative flex overflow-hidden space-x-2">
           <div
-            className={`min-w-full rounded-xl my-12 p-8 md:p-12 flex items-center text-center sm:text-start flex-col-reverse sm:flex-row justify-between duration-500 bg-[#7F0799] ${
+            className={`min-w-full rounded-xl my-12 p-8 md:p-12 flex items-center text-center sm:text-start flex-col-reverse sm:flex-row justify-between duration-700 bg-[#7F0799] ${
               currrentIndex > 0 ? "translate-x-[-101%]" : "translate-x-0"
             }`}
           >
@@ -41,7 +41,7 @@ const WhyChoose = () => {
           </div>
 
           <div
-            className={`min-w-full rounded-xl my-12 p-8 md:p-12 flex items-center text-center sm:text-start flex-col-reverse sm:flex-row justify-between duration-500 bg-[#FEC81F] ${
+            className={`min-w-full rounded-xl my-12 p-8 md:p-12 flex items-center text-center sm:text-start flex-col-reverse sm:flex-row justify-between duration-700 bg-[#FEC81F] ${
               currrentIndex === 1 &&
               "translate-x-[-101.7%] sm:translate-x-[-101%] xl:translate-x-[-100.5%]"
             } ${
@@ -67,7 +67,7 @@ const WhyChoose = () => {
           </div>
 
           <div
-            className={`min-w-full rounded-xl my-12 p-8 md:p-12 flex items-center text-center sm:text-start flex-col-reverse sm:flex-row justify-between duration-500 bg-[#070807] ${
+            className={`min-w-full rounded-xl my-12 p-8 md:p-12 flex items-center text-center sm:text-start flex-col-reverse sm:flex-row justify-between duration-700 bg-[#070807] ${
               currrentIndex === 1 &&
               "translate-x-[-101.7%] sm:translate-x-[-101%] xl:translate-x-[-100.5%]"
             } ${
@@ -118,6 +118,32 @@ const WhyChoose = () => {
               }`}
             />
           </button>
+          <div className="absolute bottom-4 left-[35%] sm:left-[40%] lg:left-[45%] flex space-x-4">
+            <p
+              onClick={() => {
+                setCurrentIndex(0);
+              }}
+              className={`h-[20px] w-[20px] rounded-full duration-700 ${
+                currrentIndex === 0 ? "bg-[#7F0799]" : "bg-[#D9D9D9]"
+              }`}
+            ></p>
+            <p
+              onClick={() => {
+                setCurrentIndex(1);
+              }}
+              className={`h-[20px] w-[20px] rounded-full duration-700 ${
+                currrentIndex === 1 ? "bg-[#FEC81F]" : "bg-[#D9D9D9]"
+              }`}
+            ></p>
+            <p
+              onClick={() => {
+                setCurrentIndex(2);
+              }}
+              className={`h-[20px] w-[20px] rounded-full duration-700 ${
+                currrentIndex === 2 ? "bg-[#070807]" : "bg-[#D9D9D9]"
+              }`}
+            ></p>
+          </div>
         </div>
       </div>
     </Fragment>
