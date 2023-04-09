@@ -3,6 +3,7 @@ import Icon1 from "../assets/Favicon/apple-touch-icon.png";
 import Icon2 from "../assets/Favicon/favicon-32x32.png";
 import Icon3 from "../assets/Favicon/favicon-16x16.png";
 ---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,11 +12,17 @@ import Icon3 from "../assets/Favicon/favicon-16x16.png";
     <link rel="icon" type="image/png" sizes="32x32" href={Icon2} />
     <link rel="icon" type="image/png" sizes="16x16" href={Icon3} />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro</title>
   </head>
   <body>
-     <slot />
+    <slot />
   </body>
 </html>

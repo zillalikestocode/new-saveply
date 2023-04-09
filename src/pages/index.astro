@@ -2,13 +2,14 @@
 // Import all your REACT COMPONENTS in here
 
 import Layout from "../Layout/Layout.astro";
-import Footer from "../components/Footer.jsx"
-import WhyChoose from "../components/WhyChoose.jsx"
-
+import Footer from "../components/Footer.jsx";
+import WhyChoose from "../components/WhyChoose.jsx";
+import Features from "../components/Features";
 ---
 
 <Layout>
- <h1>READ</h1>
- <WhyChoose />
- <Footer />
+  <h1>READ</h1>
+  <Features client:load />
+  <WhyChoose />
+  <Footer />
 </Layout>
