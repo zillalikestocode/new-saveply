@@ -5,18 +5,20 @@ import "../styles/styles.css";
 
 export default function Features() {
   return (
-    <div className="p-20 !leading-normal font-['DM_Sans'] md:text-xl">
+    <div className="lg:p-20  px-5 !leading-normal md:text-xl">
       <div className="space-y-3">
-        <h4 className="text-purp md:text-4xl font-bold">Our Key Features</h4>
+        <h4 className="text-purp md:text-4xl text-6xl font-bold">
+          Our Key Features
+        </h4>
         <p className="md:w-[500px]">
           Discover the power of Saveply to revolutionalize and achieve your
           financial goals
         </p>
       </div>
-      <div className="bg-purp p-20 w-full mt-10 items-center justify-between text-white rounded-3xl flex gap-10">
+      <div className="bg-purp p-20 w-full mt-10 items-center justify-between text-white rounded-3xl flex-col md:flex-row flex gap-10">
         <div>
           <div>
-            <h4 className="text-yello md:text-[36] font-semibold">
+            <h4 className="text-yello md:text-[36px] font-semibold">
               Total Income
             </h4>
             <h4 className="flex gap-1 items-center">
@@ -81,7 +83,9 @@ export default function Features() {
           <img src={pie} alt="" />
         </div>
         <div className="space-y-3">
-          <h4 className="text-yello font-bold md:text-5xl">Budget Tracking</h4>
+          <h4 className="text-yello font-bold md:text-5xl text-4xl">
+            Budget Tracking
+          </h4>
           <p className="md:w-[400px]">
             Say goodbye to overspending, and hello to financial freedom.
           </p>
