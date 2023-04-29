@@ -10,13 +10,13 @@ import Footer from "../components/Footer.jsx";
 
 <Layout>
   <div class="w-screen overflow-x-hidden min-h-screen bg-[#fafafa]">
-    <Header />
-    <Hero client:load />
-    <Marq client:load />
-    <Features />
-    <Marq client:load />
-    <Why />
-    <Footer />
+    <Header client:only='react' />
+    <Hero client:load client:only='react'/>
+    <Marq client:load client:only='react'/>
+    <Features client:only='react'/>
+    <Marq client:load client:only='react'/>
+    <Why client:only='react'/>
+    <Footer client:only='react'/>
   </div>
 </Layout>
 
