@@ -6,7 +6,7 @@ import {
   BsFacebook,
 } from "react-icons/bs/index.js";
 
-const Footer = () => {
+function Footer() {
   return (
     <>
       <div className="bg-[#f2f2f2] lg:p-20 p-5 flex">
@@ -58,6 +58,6 @@ const Footer = () => {
       </div>
     </>
   );
-};
+}
 
 export default Footer;

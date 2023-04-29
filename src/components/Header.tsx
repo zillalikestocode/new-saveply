@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/styles.css";
 
-const Header = () => {
+function Header() {
   return (
     <header>
       <nav className=" flex items-center lg:px-20 p-5">
@@ -16,6 +16,6 @@ const Header = () => {
       </nav>
     </header>
   );
-};
+}
 
 export default Header;

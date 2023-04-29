@@ -3,7 +3,7 @@ import { BsArrowRight } from "react-icons/bs/index.js";
 import piggy from "../assets/images/Piggy bank-bro.svg";
 import gsap from "gsap";
 
-const Hero = () => {
+function Hero() {
   const circle: LegacyRef<HTMLDivElement> = useRef();
 
   useLayoutEffect(() => {
@@ -131,6 +131,6 @@ const Hero = () => {
       </div>
     </>
   );
-};
+}
 
 export default Hero;

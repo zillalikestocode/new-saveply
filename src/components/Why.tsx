@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/styles.css";
 import { BsArrowRight } from "react-icons/bs/index.js";
 
-const Why = () => {
+function Why() {
   return (
     <div className="lg:mx-20 lg:my-10 relative z-10 text-black m-5">
       <div className="card-border"></div>
@@ -28,6 +28,6 @@ const Why = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Why;

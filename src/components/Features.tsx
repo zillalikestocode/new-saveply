@@ -6,7 +6,7 @@ import budget from "../assets/images/Spreadsheets-bro.svg";
 import wallet from "../assets/images/Wallet-bro (1).svg";
 import target from "../assets/images/Business vision-bro.svg";
 
-const Features = () => {
+function Features() {
   return (
     <div className="lg:grid items-center lg:px-20 lg:gap-y-20 px-5 p-5 flex grid-cols-2">
       <div className="space-y-5">
@@ -113,6 +113,6 @@ const Features = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Features;
