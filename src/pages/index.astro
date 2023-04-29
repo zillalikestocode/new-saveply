@@ -1,25 +1,29 @@
 ---
-// Import all your REACT COMPONENTS in here
-
 import Layout from "../Layout/Layout.astro";
-import Navbar from "../components/Navbar.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.jsx";
-import WhyChoose from "../components/WhyChoose.jsx";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
 import Features from "../components/Features";
+import Why from "../components/Why";
+import Marq from "../components/Marquee";
+import Footer from "../components/Footer";
 ---
 
 <Layout>
-  <Navbar />
-  <Header />
-  <Features client:load />
-  <WhyChoose client:load />
-  <Footer />
+  <div class="w-screen overflow-x-hidden min-h-screen bg-[#fafafa]">
+    <Header />
+    <Hero client:load />
+    <Marq client:load />
+    <Features />
+    <Marq client:load />
+    <Why />
+    <Footer />
+  </div>
 </Layout>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Bungee+Outline&family=Bungee+Shade&display=swap');
   body {
-    font-family: Sora, sans-serif;
+    font-family: Poppins, sans-serif;
+    overflow-x: hidden
   }
 </style>

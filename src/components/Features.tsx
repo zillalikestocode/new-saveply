@@ -1,165 +1,118 @@
-import pie from "../assets/Images/pie_chart.svg";
-// import naira from "../assets/Images/nigeria-naira-icon.svg";
-import largeImg from "../assets/Images/save-money.png";
-import "../styles/styles.css";
+import React from "react";
+import { BsArrowRight, BsPiggyBank } from "react-icons/bs/index.js";
+import { BiLockAlt } from "react-icons/bi/index.js";
+import { TbChevronRight } from "react-icons/tb/index.js";
+import budget from "../assets/images/Spreadsheets-bro.svg";
+import wallet from "../assets/images/Wallet-bro (1).svg";
+import target from "../assets/images/Business vision-bro.svg";
 
-export default function Features() {
+const Features = () => {
   return (
-    <div className="lg:p-20  px-5 !leading-normal md:text-xl">
-      <div className="space-y-3">
-        <h4 className="text-purp md:text-4xl text-6xl font-bold">
-          Our Key Features
-        </h4>
-        <p className="md:w-[500px]">
-          Discover the power of Saveply to revolutionalize and achieve your
-          financial goals
+    <div className="lg:grid items-center lg:px-20 lg:gap-y-20 px-5 p-5 flex grid-cols-2">
+      <div className="space-y-5">
+        <h4 className="text-5xl font-[universo]">Efficient Budget Tracking</h4>
+        <p>
+          Say goodbye to overspending and hello to financial freedom with our
+          easy budget planner and tracker.
         </p>
+        <a href="/waitlist" className="mt-5">
+          <button className="feat-btn flex items-center gap-3 px-6 p-3 mt-5 border-black bg-white border-2 font-semibold text- uppercase">
+            Join The Waitlist
+            <BsArrowRight className="w-5 h-5" />
+          </button>
+        </a>
       </div>
-      <div className="bg-purp p-20 w-full mt-10 items-center justify-between text-white rounded-3xl flex-col md:flex-row flex gap-10">
-        <div>
-          <div>
-            <h4 className="text-yello md:text-[36px] font-semibold">
-              Total Income
-            </h4>
-            <h4 className="flex gap-1 items-center">
-              <span>
-                <svg
-                  id="Layer_1"
-                  data-name="Layer 1"
-                  fill="#fff"
-                  className="w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 115.09 122.88"
-                >
-                  <title>nigeria-naira</title>
-                  <path d="M13.42,0H32.1a1.25,1.25,0,0,1,1,.6L58,42.26H83.17v-41A1.23,1.23,0,0,1,84.39,0h17.28a1.23,1.23,0,0,1,1.23,1.23v41h11a1.23,1.23,0,0,1,1.23,1.23V54.55a1.23,1.23,0,0,1-1.23,1.23h-11v9.41h11a1.23,1.23,0,0,1,1.23,1.22V77.48a1.23,1.23,0,0,1-1.23,1.22h-11v43a1.23,1.23,0,0,1-1.23,1.23H84.39a1.25,1.25,0,0,1-1-.6L58,78.7H33.26v43A1.23,1.23,0,0,1,32,122.88H13.42a1.23,1.23,0,0,1-1.23-1.23V78.7h-11A1.23,1.23,0,0,1,0,77.48V66.41a1.23,1.23,0,0,1,1.23-1.22h11V55.78h-11A1.23,1.23,0,0,1,0,54.55V43.49a1.23,1.23,0,0,1,1.23-1.23h11v-41A1.23,1.23,0,0,1,13.42,0ZM33.26,55.78v9.41h17l-4.4-9.41ZM70,65.19H83.17V55.78H65.68L70,65.19ZM83.17,78.7H77.88l5.29,11v-11ZM33.26,32.76v9.5h4.57l-4.57-9.5Z" />
-                </svg>
-              </span>
-              115,664.00
-            </h4>
-          </div>
-          <div className="my-5">
-            <h4 className="font-semibold text-yello">Expenses</h4>
-            <div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-4 bg-[#fff176] rounded"></div>
-                <h4>Food</h4>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-4 bg-[#d38200] rounded"></div>
-                <h4>Transport</h4>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-4 bg-[#7e57c2] rounded"></div>
-                <h4>Data</h4>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-semibold text-yello">Net Income</h4>
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-4 bg-[#ff0799] rounded"></div>
-              <h4 className="flex gap-1 items-center">
-                <span>
-                  <svg
-                    id="Layer_1"
-                    data-name="Layer 1"
-                    fill="#fff"
-                    className="w-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 115.09 122.88"
-                  >
-                    <title>nigeria-naira</title>
-                    <path d="M13.42,0H32.1a1.25,1.25,0,0,1,1,.6L58,42.26H83.17v-41A1.23,1.23,0,0,1,84.39,0h17.28a1.23,1.23,0,0,1,1.23,1.23v41h11a1.23,1.23,0,0,1,1.23,1.23V54.55a1.23,1.23,0,0,1-1.23,1.23h-11v9.41h11a1.23,1.23,0,0,1,1.23,1.22V77.48a1.23,1.23,0,0,1-1.23,1.22h-11v43a1.23,1.23,0,0,1-1.23,1.23H84.39a1.25,1.25,0,0,1-1-.6L58,78.7H33.26v43A1.23,1.23,0,0,1,32,122.88H13.42a1.23,1.23,0,0,1-1.23-1.23V78.7h-11A1.23,1.23,0,0,1,0,77.48V66.41a1.23,1.23,0,0,1,1.23-1.22h11V55.78h-11A1.23,1.23,0,0,1,0,54.55V43.49a1.23,1.23,0,0,1,1.23-1.23h11v-41A1.23,1.23,0,0,1,13.42,0ZM33.26,55.78v9.41h17l-4.4-9.41ZM70,65.19H83.17V55.78H65.68L70,65.19ZM83.17,78.7H77.88l5.29,11v-11ZM33.26,32.76v9.5h4.57l-4.57-9.5Z" />
-                  </svg>
-                </span>
-                46,265.60
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div>
-          <img src={pie} alt="" />
-        </div>
-        <div className="space-y-3">
-          <h4 className="text-yello font-bold md:text-5xl text-4xl">
-            Budget Tracking
-          </h4>
-          <p className="md:w-[400px]">
-            Say goodbye to overspending, and hello to financial freedom.
-          </p>
-        </div>
+      <div className="h-[500px] object-cover overflow-hidden">
+        <img src={budget} alt="" className="object-cover h-full w-full" />
       </div>
-      <div className="grid grid-col-1 gap-5 w-full">
-        <div className="mt-5 flex flex-col md:flex-row gap-5 md:gap-20 rounded-2xl items-center bg-yello text-black p-5 md:p-20 w-full">
-          <div>
-            <h4 className="font-bold md:text-5xl text-3xl">Target Savings</h4>
-            <p className="md:text-2xl md:mt-5 mt-3 leading-normal">
-              With customizable savings plans and a user-friendly interface
-              saving has never been this effortless.
-            </p>
-          </div>
-          <div className="bg-white w-full p-5 text-base rounded-xl gap-10 items-center flex">
-            <div className="relative">
-              <div className="h-32 w-32 absolute border-purp rounded-full border-[20px] progress-outer"></div>
-              <div className="h-32 w-32 border-purp/25 rounded-full border-[20px]"></div>
-            </div>
-            <div className="space-y-3">
-              <h4 className="font-semibold text-2xl">School Fees</h4>
-              <h4>75%</h4>
-              <h4>Target Amount: 100,000</h4>
-            </div>
-          </div>
-        </div>
-        <div className=" rounded-2xl flex flex-col md:flex-row gap-5 md:gap-20 md:items-center bg-black p-5 md:p-20 w-full relative overflow-hidden text-white">
-          <div className="md:order-2">
-            <h4 className="font-bold md:text-5xl text-3xl">Personal Wallet</h4>
-            <p className="md:text-2xl md:mt-10 mt-3 font-normal leading-normal">
-              Our secure and user-friendly digital wallet allows you to store,
-              send and receive money with just a few taps on you smartphone.
-            </p>
-          </div>
-          <div className="relative">
-            <div className="absolute w-20 h-20 bg-purp/70 rounded-full bottom-4 left-4" />
-            <div className="absolute w-20 h-20 bg-purp/70 rounded-full right-4 bottom-32" />
-            <div className="w-full p-7 space-y-5 rounded-2xl backdrop-blur-[10px] border border-white/50 bg-white/10">
-              <h4 className="font-medium text-sm">Wallet Balance</h4>
-              <span>🇳🇬</span>
-              <h4 className="md:text-6xl text-4xl flex gap-2 items-center m-auto">
-                <svg
-                  id="Layer_1"
-                  data-name="Layer 1"
-                  fill="#fff"
-                  className="w-10"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 115.09 122.88"
-                >
-                  <title>nigeria-naira</title>
-                  <path d="M13.42,0H32.1a1.25,1.25,0,0,1,1,.6L58,42.26H83.17v-41A1.23,1.23,0,0,1,84.39,0h17.28a1.23,1.23,0,0,1,1.23,1.23v41h11a1.23,1.23,0,0,1,1.23,1.23V54.55a1.23,1.23,0,0,1-1.23,1.23h-11v9.41h11a1.23,1.23,0,0,1,1.23,1.22V77.48a1.23,1.23,0,0,1-1.23,1.22h-11v43a1.23,1.23,0,0,1-1.23,1.23H84.39a1.25,1.25,0,0,1-1-.6L58,78.7H33.26v43A1.23,1.23,0,0,1,32,122.88H13.42a1.23,1.23,0,0,1-1.23-1.23V78.7h-11A1.23,1.23,0,0,1,0,77.48V66.41a1.23,1.23,0,0,1,1.23-1.22h11V55.78h-11A1.23,1.23,0,0,1,0,54.55V43.49a1.23,1.23,0,0,1,1.23-1.23h11v-41A1.23,1.23,0,0,1,13.42,0ZM33.26,55.78v9.41h17l-4.4-9.41ZM70,65.19H83.17V55.78H65.68L70,65.19ZM83.17,78.7H77.88l5.29,11v-11ZM33.26,32.76v9.5h4.57l-4.57-9.5Z" />
-                </svg>
-                1,000,000.00
-              </h4>
-            </div>
-          </div>
-        </div>
+      <div className="h-[500px] object-cover overflow-hidden">
+        <img src={wallet} alt="" className="object-cover h-full w-full" />
       </div>
-      <div className="rounded-xl mt-10 bg-purp items-center flex flex-col md:flex-row">
-        <div className="w-full ">
-          <img src={largeImg} className="rounded-xl md:rounded-none" alt="" />
+      <div className="space-y-5 z-30">
+        <h4 className="text-5xl font-[universo]">Personal Wallet</h4>
+        <p>
+          Our secure and user-friendly digital wallet allows you to store, send,
+          and receive money with just a few taps on your smartphone.
+        </p>
+        <div className="absolute bg-violet-500 -z-10 lg:translate-y-32 lg:-translate-x-5 w-16 h-16 rounded-full" />
+        <div className="absolute bg-violet-500 -z-10 lg:translate-y-2 lg:translate-x-[450px] w-16 h-16 rounded-full" />
+        <div className="border mt-5 bg-violet-500/10 z-20 backdrop-blur-[12px] p-5 w-[500px] rounded-2xl">
+          <h4 className="text-sm font-medium">Wallet</h4>
+          <div className="flex w-8 mt-5 h-4 rounded">
+            <div className="w-full bg-green-700 rounded-l" />
+            <div className="w-full bg-white" />
+            <div className="w-full bg-green-700 rounded-r" />
+          </div>
+          <h4 className="font-[blaft] text-4xl mt-5">$1,000,000.00</h4>
         </div>
-        <div className="w-full space-y-5 text-white p-10 h-full">
-          <h4 className="font-bold text-5xl w-96 text-yello ">
-            Save simply, not harder.
-          </h4>
-          <p className="">
-            Saving money doesn't have to be complicated. With Saveply, you can
-            save more without breaking a sweat. Making it easy for you to reach
-            your financial goals.
-          </p>
-          <button>Learn More</button>
+        <a href="/waitlist" className="mt-5">
+          <button className="feat-btn flex items-center gap-3 px-6 p-3 mt-5 border-black bg-black text-white border-2 font-semibold text- uppercase">
+            Join The Waitlist
+            <BsArrowRight className="w-5 h-5" />
+          </button>
+        </a>
+      </div>
+      <div className="space-y-5">
+        <h4 className="text-5xl font-[universo]">Target Your Savings</h4>
+        <p>
+          With customizable savings plans and a user-friendly interface, saving
+          has never been this effortless
+        </p>
+        <div className="flex mt-5 gap-10">
+          <div className="rounded-xl border border-black h-fit lg:w-56 shad font-semibold text-black/90 gap-10">
+            <div className="p-5">
+              <div className="flex items-center">
+                <div className="bg-violet-400 border-black border w-fit p-3 rounded-md">
+                  <BsPiggyBank className="w-5 h-5 text-black" />
+                </div>
+                <h4 className="ml-auto">$10,000</h4>
+              </div>
+              <h4 className="mt-10">School Fees</h4>
+              <div className="mt-5">
+                <h4 className="text-xs font-semibold uppercase">target</h4>
+                <h4 className="text-xl">$30,000</h4>
+              </div>
+            </div>
+            <button className="w-full p-3 px-5 text-black/75 font-medium flex gap-3 items-center bg-violet-400/25 rounded-t-2xl rounded-b-xl">
+              Withdraw
+              <BiLockAlt className="w-5 h-5 ml-auto" />
+            </button>
+          </div>
+          <div className="relative z-10">
+            <div className="absolute -z-10 h-full w-full rounded-xl border border-black top-4 left-4" />
+            <div className="rounded-xl p-1 h-fit lg:w-56 bg-violet-400/50 backdrop-blur-xl font-semibold text-black gap-10">
+              <div className="p-4">
+                <div className="flex items-center">
+                  <div className=" bg-black w-fit p-3 rounded-md">
+                    <BsPiggyBank className="w-5 h-5 text-violet-400" />
+                  </div>
+                  <h4 className="ml-auto">$110,000</h4>
+                </div>
+                <h4 className="mt-10">Rent</h4>
+                <div className="mt-5">
+                  <h4 className="text-xs font-semibold uppercase">target</h4>
+                  <h4 className="text-xl">$100,000</h4>
+                </div>
+              </div>
+              <button className="w-full p-3 px-5 text-violet-400 font-medium flex gap-3 items-center bg-black rounded-t-2xl rounded-b-xl">
+                Withdraw
+                <TbChevronRight className="w-5 h-5 ml-auto" />
+              </button>
+            </div>
+          </div>
         </div>
+        <a href="/waitlist" className="mt-5">
+          <button className="feat-btn flex items-center gap-3 px-6 p-3 mt-5 border-black bg-white border-2 font-semibold text- uppercase">
+            Join The Waitlist
+            <BsArrowRight className="w-5 h-5" />
+          </button>
+        </a>
+      </div>
+      <div className="h-[500px] object-cover overflow-hidden">
+        <img src={target} alt="" className="object-cover h-full w-full" />
       </div>
     </div>
   );
-}
+};
+
+export default Features;
