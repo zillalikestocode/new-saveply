@@ -93,7 +93,7 @@ function Hero() {
             peace of mind knowing your money is working for you. Start your
             journey to financial freedom today with Saveply.
           </p>
-          <div className="flex w-fit border-2 mt-5 md:mt-0 border-black lg:mt-7">
+          <div className="flex w-fit md:border-2 mt-5 md:mt-0 border-black lg:mt-7">
             <input
               placeholder="Your Email"
               type="email"

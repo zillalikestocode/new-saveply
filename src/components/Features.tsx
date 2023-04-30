@@ -27,7 +27,7 @@ function Features() {
       <div className="md:h-[500px] order-1 md:order-none object-cover overflow-hidden">
         <img src={budget} alt="" className="object-cover h-full w-full" />
       </div>
-      <div className="md:h-[500px] order-3 md:order-none object-cover overflow-hidden">
+      <div className="md:h-[500px] mt-10 md:mt-0 order-3 md:order-none object-cover overflow-hidden">
         <img src={wallet} alt="" className="object-cover h-full w-full" />
       </div>
       <div className="space-y-5 order-4 md:order-none z-30">
@@ -114,7 +114,7 @@ function Features() {
           </button>
         </a>
       </div>
-      <div className="md:h-[500px] order-5 md:order-none object-cover overflow-hidden">
+      <div className="md:h-[500px] mt-10 md:mt-0 order-5 md:order-none object-cover overflow-hidden">
         <img src={target} alt="" className="object-cover h-full w-full" />
       </div>
     </div>

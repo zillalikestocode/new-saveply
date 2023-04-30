@@ -12,7 +12,7 @@ function Why() {
             Save Simply, not Harder. Saving money doesn't have to be
             complicated.
           </h4>
-          <div className="border-2 border-black w-fit md:w-[500px] flex items-center mt-10">
+          <div className="md:border-2 border-black w-fit md:w-[500px] flex items-center mt-10">
             <input
               type="email"
               placeholder="Your Email"
