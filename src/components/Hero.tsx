@@ -67,7 +67,7 @@ function Hero() {
 
   return (
     <>
-      <div className="flex lg:grid grid-cols-2 grid-rows-1 mt-10 lg:mt-0 overflow-hidden px-5 lg:pl-20">
+      <div className="flex flex-col md:flex-row lg:grid grid-cols-2 grid-rows-1 mt-10 lg:mt-0 overflow-hidden px-5 lg:pl-20">
         <div className="flex-grow lg:mt-16">
           <div>
             <div className="overflow-hidden">
@@ -105,7 +105,7 @@ function Hero() {
             </button>
           </div>
         </div>
-        <div className="flex-grow ml-auto lg:w-[800px]">
+        <div className="flex-grow hidden md:block ml-auto lg:w-[800px]">
           <img src={piggy} className="-translate-y-24" />
         </div>
       </div>
