@@ -42,14 +42,16 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex items-end lg:px-20 p-5 pt-0 bg-[#f2f2f2]">
+      <div className="flex flex-col md:flex-row md:items-end lg:px-20 p-5 pt-0 bg-[#f2f2f2]">
         <div className="space-y-2">
-          <h4 className="text-2xl font-semibold">Save Simply, not Harder.</h4>
-          <p className="text-black/60 font-medium">
+          <h4 className="md:text-2xl text-xl font-semibold">
+            Save Simply, not Harder.
+          </h4>
+          <p className="text-black/60 md:text-base text-sm font-medium">
             Use Saveply today and say goodbye to saving problems.
           </p>
         </div>
-        <div className="ml-auto flex items-center gap-2">
+        <div className="md:ml-auto flex items-center mt-5 md:mt-0 gap-2">
           &copy;
           <h4 className="font-medium text-neutral-600">
             2023 Saveply. All rights reserved.

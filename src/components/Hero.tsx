@@ -71,35 +71,35 @@ function Hero() {
         <div className="flex-grow lg:mt-16">
           <div>
             <div className="overflow-hidden">
-              <h4 className="text-7xl hero-text !leading-[1.2] font-[universo]">
+              <h4 className="lg:text-7xl text-5xl hero-text !leading-[1.2] font-[universo]">
                 Be part of the
               </h4>
             </div>
             <div className="overflow-hidden">
-              <h4 className="text-7xl hero-text !leading-[1.2] w-fit font-[universo] savings">
+              <h4 className="lg:text-7xl text-5xl hero-text !leading-[1.2] w-fit font-[universo] savings">
                 <span className="savings-span">Savings</span>
                 Savings
               </h4>
             </div>
             <div className="overflow-hidden">
-              <h4 className="text-7xl hero-text !leading-[1.2] font-[universo]">
+              <h4 className="lg:text-7xl text-5xl hero-text !leading-[1.2] font-[universo]">
                 Revolution.
               </h4>
             </div>
           </div>
-          <p className="font-medium text-neutral-600 !leading-normal lg:w-[600px] mt-5">
+          <p className="font-medium lg:text-base text-sm text-neutral-600 !leading-normal lg:w-[600px] mt-5">
             Save more money and earn simply and securely with Saveply. With
             Saveply, you can take control of your financial future and enjoy
             peace of mind knowing your money is working for you. Start your
             journey to financial freedom today with Saveply.
           </p>
-          <div className="flex w-fit border-2 border-black lg:mt-7">
+          <div className="flex w-fit border-2 mt-5 md:mt-0 border-black lg:mt-7">
             <input
               placeholder="Your Email"
               type="email"
-              className="font-semibold bg-transparent w-full lg:w-[400px] placeholder:text-black focus:outline-none p-3"
+              className="font-semibold bg-transparent lg:w-[400px] placeholder:text-black focus:outline-none p-3"
             />
-            <button className="bg-black p-4 px-5 flex items-center gap-3 text-white w-fit text-sm ml-auto">
+            <button className="bg-black p-4 px-5 flex items-center gap-3 text-white w-fit text-xs md:text-sm ml-auto">
               Join Waitlist
               <BsArrowRight className="h-5 w-5" />
             </button>
@@ -109,18 +109,18 @@ function Hero() {
           <img src={piggy} className="-translate-y-24" />
         </div>
       </div>
-      <div className="lg:px-20 px-5 text-black flex gap-10">
+      <div className="lg:px-20 mt-10 md:mt-0 px-5 text-black flex flex-col md:flex-row gap-10">
         <div className="space-y-5">
-          <h4 className="font-[universo] text-5xl">
+          <h4 className="font-[universo] text-3xl md:text-5xl">
             The NeoPiggybank you can trust.
           </h4>
-          <p className="text-xl !leading-normal font-medium">
+          <p className="md:text-xl !leading-normal font-medium">
             Saveply uses up-to-date encryption and security measures to protect
             the savings, informations and transactions of our users. Users can
             be assured that their funds are safe and secure.
           </p>
         </div>
-        <div className="w-[500px]">
+        <div className="w-[500px] hidden md:block">
           <div
             ref={circle}
             id="circle"

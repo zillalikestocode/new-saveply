@@ -8,8 +8,8 @@ import target from "../assets/images/Business vision-bro.svg";
 
 function Features() {
   return (
-    <div className="lg:grid items-center lg:px-20 lg:gap-y-20 px-5 p-5 flex grid-cols-2">
-      <div className="space-y-5">
+    <div className="lg:grid items-center lg:px-20 lg:gap-y-20 px-5 p-5 flex flex-col grid-cols-2">
+      <div className="space-y-5 order-2 md:order-none">
         <h4 className="text-5xl font-[universo]">Efficient Budget Tracking</h4>
         <p>
           Say goodbye to overspending and hello to financial freedom with our
@@ -22,21 +22,21 @@ function Features() {
           </button>
         </a>
       </div>
-      <div className="h-[500px] object-cover overflow-hidden">
+      <div className="md:h-[500px] order-1 md:order-none object-cover overflow-hidden">
         <img src={budget} alt="" className="object-cover h-full w-full" />
       </div>
-      <div className="h-[500px] object-cover overflow-hidden">
+      <div className="md:h-[500px] order-3 md:order-none object-cover overflow-hidden">
         <img src={wallet} alt="" className="object-cover h-full w-full" />
       </div>
-      <div className="space-y-5 z-30">
+      <div className="space-y-5 order-4 md:order-none z-30">
         <h4 className="text-5xl font-[universo]">Personal Wallet</h4>
         <p>
           Our secure and user-friendly digital wallet allows you to store, send,
           and receive money with just a few taps on your smartphone.
         </p>
-        <div className="absolute bg-violet-500 -z-10 lg:translate-y-32 lg:-translate-x-5 w-16 h-16 rounded-full" />
-        <div className="absolute bg-violet-500 -z-10 lg:translate-y-2 lg:translate-x-[450px] w-16 h-16 rounded-full" />
-        <div className="border mt-5 bg-violet-500/10 z-20 backdrop-blur-[12px] p-5 w-[500px] rounded-2xl">
+        <div className="absolute bg-violet-500 -z-10 translate-y-32 -translate-x-5 w-16 h-16 rounded-full" />
+        <div className="absolute bg-violet-500 -z-10 translate-y-2 translate-x-56 md:translate-x-[450px] w-16 h-16 rounded-full" />
+        <div className="border mt-5 bg-violet-500/10 z-20 backdrop-blur-[12px] p-5 w-full md:w-[500px] rounded-2xl">
           <h4 className="text-sm font-medium">Wallet</h4>
           <div className="flex w-8 mt-5 h-4 rounded">
             <div className="w-full bg-green-700 rounded-l" />
@@ -52,14 +52,14 @@ function Features() {
           </button>
         </a>
       </div>
-      <div className="space-y-5">
+      <div className="space-y-5 order-6 md:order-none">
         <h4 className="text-5xl font-[universo]">Target Your Savings</h4>
         <p>
           With customizable savings plans and a user-friendly interface, saving
           has never been this effortless
         </p>
-        <div className="flex mt-5 gap-10">
-          <div className="rounded-xl border border-black h-fit lg:w-56 shad font-semibold text-black/90 gap-10">
+        <div className="flex mt-5 md:gap-10 gap-5">
+          <div className="rounded-xl border border-black h-fit w-full lg:w-56 shad font-semibold text-black/90 gap-10">
             <div className="p-5">
               <div className="flex items-center">
                 <div className="bg-violet-400 border-black border w-fit p-3 rounded-md">
@@ -78,9 +78,9 @@ function Features() {
               <BiLockAlt className="w-5 h-5 ml-auto" />
             </button>
           </div>
-          <div className="relative z-10">
+          <div className="relative w-full z-10">
             <div className="absolute -z-10 h-full w-full rounded-xl border border-black top-4 left-4" />
-            <div className="rounded-xl p-1 h-fit lg:w-56 bg-violet-400/50 backdrop-blur-xl font-semibold text-black gap-10">
+            <div className="rounded-xl p-1 h-fit w-full lg:w-56 bg-violet-400/50 backdrop-blur-xl font-semibold text-black gap-10">
               <div className="p-4">
                 <div className="flex items-center">
                   <div className=" bg-black w-fit p-3 rounded-md">
@@ -108,7 +108,7 @@ function Features() {
           </button>
         </a>
       </div>
-      <div className="h-[500px] object-cover overflow-hidden">
+      <div className="md:h-[500px] order-5 md:order-none object-cover overflow-hidden">
         <img src={target} alt="" className="object-cover h-full w-full" />
       </div>
     </div>
