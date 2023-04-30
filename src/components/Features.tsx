@@ -10,7 +10,9 @@ function Features() {
   return (
     <div className="lg:grid items-center lg:px-20 lg:gap-y-20 px-5 p-5 flex flex-col grid-cols-2">
       <div className="space-y-5 order-2 md:order-none">
-        <h4 className="text-5xl font-[universo]">Efficient Budget Tracking</h4>
+        <h4 className="md:text-5xl text-4xl font-[universo]">
+          Efficient Budget Tracking
+        </h4>
         <p>
           Say goodbye to overspending and hello to financial freedom with our
           easy budget planner and tracker.
@@ -29,7 +31,9 @@ function Features() {
         <img src={wallet} alt="" className="object-cover h-full w-full" />
       </div>
       <div className="space-y-5 order-4 md:order-none z-30">
-        <h4 className="text-5xl font-[universo]">Personal Wallet</h4>
+        <h4 className="md:text-5xl text-4xl font-[universo]">
+          Personal Wallet
+        </h4>
         <p>
           Our secure and user-friendly digital wallet allows you to store, send,
           and receive money with just a few taps on your smartphone.
@@ -53,7 +57,9 @@ function Features() {
         </a>
       </div>
       <div className="space-y-5 order-6 md:order-none">
-        <h4 className="text-5xl font-[universo]">Target Your Savings</h4>
+        <h4 className="md:text-5xl text-4xl font-[universo]">
+          Target Your Savings
+        </h4>
         <p>
           With customizable savings plans and a user-friendly interface, saving
           has never been this effortless

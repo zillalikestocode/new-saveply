@@ -97,9 +97,9 @@ function Hero() {
             <input
               placeholder="Your Email"
               type="email"
-              className="font-semibold bg-transparent lg:w-[400px] placeholder:text-black focus:outline-none p-3"
+              className="font-semibold bg-transparent hidden md:block lg:w-[400px] placeholder:text-black focus:outline-none p-3"
             />
-            <button className="bg-black p-4 px-5 flex items-center gap-3 text-white w-fit text-xs md:text-sm ml-auto">
+            <button className="bg-black p-4 px-5 flex items-center gap-3 text-white w-fit text-sm ml-auto">
               Join Waitlist
               <BsArrowRight className="h-5 w-5" />
             </button>
